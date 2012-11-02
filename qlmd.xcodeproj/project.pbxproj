@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CBE11021643606200CBA1A1 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11011643606200CBA1A1 /* QuickLook.framework */; };
+		2CBE11041643606200CBA1A1 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11031643606200CBA1A1 /* ApplicationServices.framework */; };
+		2CBE11061643606200CBA1A1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11051643606200CBA1A1 /* CoreServices.framework */; };
+		2CBE11081643606200CBA1A1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11071643606200CBA1A1 /* CoreFoundation.framework */; };
+		2CBE110E1643606200CBA1A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE110C1643606200CBA1A1 /* InfoPlist.strings */; };
+		2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */; };
+		2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */; };
+		2CBE11141643606200CBA1A1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11131643606200CBA1A1 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlmd.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBE11011643606200CBA1A1 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		2CBE11031643606200CBA1A1 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		2CBE11051643606200CBA1A1 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		2CBE11071643606200CBA1A1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2CBE110B1643606200CBA1A1 /* qlmd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "qlmd-Info.plist"; sourceTree = "<group>"; };
+		2CBE110D1643606200CBA1A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		2CBE11131643606200CBA1A1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2CBE11151643606200CBA1A1 /* qlmd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qlmd-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CBE10F91643606200CBA1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBE11021643606200CBA1A1 /* QuickLook.framework in Frameworks */,
+				2CBE11041643606200CBA1A1 /* ApplicationServices.framework in Frameworks */,
+				2CBE11061643606200CBA1A1 /* CoreServices.framework in Frameworks */,
+				2CBE11081643606200CBA1A1 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CBE10F11643606200CBA1A1 = {
+			isa = PBXGroup;
+			children = (
+				2CBE11091643606200CBA1A1 /* qlmd */,
+				2CBE11001643606200CBA1A1 /* Frameworks */,
+				2CBE10FF1643606200CBA1A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CBE10FF1643606200CBA1A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CBE11001643606200CBA1A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CBE11011643606200CBA1A1 /* QuickLook.framework */,
+				2CBE11031643606200CBA1A1 /* ApplicationServices.framework */,
+				2CBE11051643606200CBA1A1 /* CoreServices.framework */,
+				2CBE11071643606200CBA1A1 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CBE11091643606200CBA1A1 /* qlmd */ = {
+			isa = PBXGroup;
+			children = (
+				2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */,
+				2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */,
+				2CBE11131643606200CBA1A1 /* main.c */,
+				2CBE110A1643606200CBA1A1 /* Supporting Files */,
+			);
+			path = qlmd;
+			sourceTree = "<group>";
+		};
+		2CBE110A1643606200CBA1A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CBE110B1643606200CBA1A1 /* qlmd-Info.plist */,
+				2CBE110C1643606200CBA1A1 /* InfoPlist.strings */,
+				2CBE11151643606200CBA1A1 /* qlmd-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CBE10FA1643606200CBA1A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2CBE10FD1643606200CBA1A1 /* qlmd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBE11181643606200CBA1A1 /* Build configuration list for PBXNativeTarget "qlmd" */;
+			buildPhases = (
+				2CBE10F81643606200CBA1A1 /* Sources */,
+				2CBE10F91643606200CBA1A1 /* Frameworks */,
+				2CBE10FA1643606200CBA1A1 /* Headers */,
+				2CBE10FB1643606200CBA1A1 /* Resources */,
+				2CBE10FC1643606200CBA1A1 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qlmd;
+			productName = qlmd;
+			productReference = 2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CBE10F31643606200CBA1A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Marcus Ortiz";
+			};
+			buildConfigurationList = 2CBE10F61643606200CBA1A1 /* Build configuration list for PBXProject "qlmd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CBE10F11643606200CBA1A1;
+			productRefGroup = 2CBE10FF1643606200CBA1A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CBE10FD1643606200CBA1A1 /* qlmd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CBE10FB1643606200CBA1A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBE110E1643606200CBA1A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		2CBE10FC1643606200CBA1A1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CBE10F81643606200CBA1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.c in Sources */,
+				2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.c in Sources */,
+				2CBE11141643606200CBA1A1 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CBE110C1643606200CBA1A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CBE110D1643606200CBA1A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CBE11161643606200CBA1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CBE11171643606200CBA1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2CBE11191643606200CBA1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "qlmd/qlmd-Prefix.pch";
+				INFOPLIST_FILE = "qlmd/qlmd-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		2CBE111A1643606200CBA1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "qlmd/qlmd-Prefix.pch";
+				INFOPLIST_FILE = "qlmd/qlmd-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CBE10F61643606200CBA1A1 /* Build configuration list for PBXProject "qlmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBE11161643606200CBA1A1 /* Debug */,
+				2CBE11171643606200CBA1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CBE11181643606200CBA1A1 /* Build configuration list for PBXNativeTarget "qlmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBE11191643606200CBA1A1 /* Debug */,
+				2CBE111A1643606200CBA1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CBE10F31643606200CBA1A1 /* Project object */;
+}
