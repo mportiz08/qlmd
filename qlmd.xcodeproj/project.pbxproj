@@ -21,7 +21,6 @@
 		2C3698FE1643A2A000065606 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698FB1643A2A000065606 /* houdini_href_e.c */; };
 		2C3698FF1643A2A000065606 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698FC1643A2A000065606 /* houdini_html_e.c */; };
 		2C3699001643A2A000065606 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698FD1643A2A000065606 /* houdini.h */; };
-		2C7F3DCA16444F45005A9C04 /* qlmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C7F3DC916444F45005A9C04 /* qlmd.c */; };
 		2CBE11021643606200CBA1A1 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11011643606200CBA1A1 /* QuickLook.framework */; };
 		2CBE11041643606200CBA1A1 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11031643606200CBA1A1 /* ApplicationServices.framework */; };
 		2CBE11061643606200CBA1A1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11051643606200CBA1A1 /* CoreServices.framework */; };
@@ -61,8 +60,6 @@
 		2C3698FB1643A2A000065606 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
 		2C3698FC1643A2A000065606 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
 		2C3698FD1643A2A000065606 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
-		2C7F3DC716444F26005A9C04 /* qlmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qlmd.h; sourceTree = "<group>"; };
-		2C7F3DC916444F45005A9C04 /* qlmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qlmd.c; sourceTree = "<group>"; };
 		2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlmd.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBE11011643606200CBA1A1 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		2CBE11031643606200CBA1A1 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -124,8 +121,6 @@
 			children = (
 				2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.m */,
 				2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.m */,
-				2C7F3DC716444F26005A9C04 /* qlmd.h */,
-				2C7F3DC916444F45005A9C04 /* qlmd.c */,
 				2C3698FB1643A2A000065606 /* houdini_href_e.c */,
 				2C3698FC1643A2A000065606 /* houdini_html_e.c */,
 				2C3698FD1643A2A000065606 /* houdini.h */,
@@ -258,7 +253,6 @@
 				2C3698F91643A23500065606 /* html.c in Sources */,
 				2C3698FE1643A2A000065606 /* houdini_href_e.c in Sources */,
 				2C3698FF1643A2A000065606 /* houdini_html_e.c in Sources */,
-				2C7F3DCA16444F45005A9C04 /* qlmd.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
