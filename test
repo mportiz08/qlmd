@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Tests this quicklook plugin with a markdown file.
+
+# abort the script if anything fails
+set -e
+
+# build the project
+xcodebuild
+
+# resets the QuickLook server
+qlmanage -r
+
+# debug quicklook on a file (use test.md if file not given)
+# (qlmd.qlgenerator should be copied to ~/Library/QuickLook when its built)
+if [ $# -eq 0 ]; then
+  qlmanage -p test.md
+else
+  qlmanage -p $1
+fi
