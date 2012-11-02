@@ -13,8 +13,14 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
 {
-  // TODO: change the first null val to an html string
-  QLPreviewRequestSetDataRepresentation(preview, NULL, kUTTypeHTML, NULL);
+  CFDataRef data;
+  CFStringRef html;
+  
+  html = CFSTR("<html><head><title>foobar</title></head><body>foobar</body></html>");
+  data = CFStringCreateExternalRepresentation(NULL, html, kCFStringEncodingUTF8, 0);
+  
+  QLPreviewRequestSetDataRepresentation(preview, data, kUTTypeHTML, NULL);
+  
   return noErr;
 }
 

@@ -15,7 +15,21 @@
 		2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */; };
 		2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */; };
 		2CBE11141643606200CBA1A1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11131643606200CBA1A1 /* main.c */; };
+		2CBE111C164372F300CBA1A1 /* qlmd.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CBE111B164372BA00CBA1A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				2CBE111C164372F300CBA1A1 /* qlmd.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlmd.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +131,7 @@
 				2CBE10FA1643606200CBA1A1 /* Headers */,
 				2CBE10FB1643606200CBA1A1 /* Resources */,
 				2CBE10FC1643606200CBA1A1 /* Rez */,
+				2CBE111B164372BA00CBA1A1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
