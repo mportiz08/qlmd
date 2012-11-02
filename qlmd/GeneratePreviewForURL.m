@@ -43,7 +43,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 //  sdhtml_renderer(&callbacks, &opts, 0);
 //  markdown = sd_markdown_new(EXTENSIONS, MAX_NESTING, &callbacks, &opts);
 //  sd_markdown_render(out_buff, in_buff->data, in_buff->size, markdown);
-//  
+//
 //  html = CFStringCreateWithBytes(NULL, out_buff->data, out_buff->size, kCFStringEncodingUTF8, true);
 //  data = CFStringCreateExternalRepresentation(NULL, html, kCFStringEncodingUTF8, 0);
 //  QLPreviewRequestSetDataRepresentation(preview, data, kUTTypeHTML, NULL);
@@ -55,7 +55,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 //  CFRelease(data);
   NSMutableDictionary *props;
   NSMutableString *html;
-  NSString *unrendered;
+  NSMutableString *rendered;
+  struct buf *inbuf, *outbuf;
+  struct html_renderopt opts;
+  struct sd_callbacks callbacks;
+  struct sd_markdown *markdown;
   
   @autoreleasepool {
     if(QLPreviewRequestIsCancelled(preview)) {
@@ -69,9 +73,23 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     html = [[NSMutableString alloc] init];
     [html appendString:@"<!DOCTYPE html><html><head><meta charset=\"UTF-8\" /></head><body>"];
     
-    unrendered = [NSString stringWithContentsOfURL:(__bridge NSURL *)url encoding:NSUTF8StringEncoding error:NULL];
+    NSString *unrendered = [NSString stringWithContentsOfURL:(__bridge NSURL *)url
+                                                    encoding:NSUTF8StringEncoding error:NULL];
+    NSData *data = [unrendered dataUsingEncoding:NSUTF8StringEncoding];
+    const void *rawBytes = [data bytes];
+    inbuf = bufnew([data length]);
+    bufput(inbuf, rawBytes, [data length]);
+    outbuf = bufnew(OUTPUT_UNIT);
     
-    [html appendString:unrendered];
+    sdhtml_renderer(&callbacks, &opts, 0);
+    markdown = sd_markdown_new(EXTENSIONS, MAX_NESTING, &callbacks, &opts);
+    sd_markdown_render(outbuf, inbuf->data, inbuf->size, markdown);
+    
+    rendered = [[NSMutableString alloc] initWithBytes:outbuf->data
+                                               length:outbuf->size
+                                             encoding:NSUTF8StringEncoding];
+    
+    [html appendString:rendered];
     [html appendString:@"</body></html>"];
     
     QLPreviewRequestSetDataRepresentation(preview,
