@@ -27,8 +27,8 @@
 		2CBE11061643606200CBA1A1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11051643606200CBA1A1 /* CoreServices.framework */; };
 		2CBE11081643606200CBA1A1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11071643606200CBA1A1 /* CoreFoundation.framework */; };
 		2CBE110E1643606200CBA1A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE110C1643606200CBA1A1 /* InfoPlist.strings */; };
-		2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */; };
-		2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */; };
+		2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.m */; };
+		2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.m */; };
 		2CBE11141643606200CBA1A1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE11131643606200CBA1A1 /* main.c */; };
 		2CBE111C164372F300CBA1A1 /* qlmd.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */; };
 /* End PBXBuildFile section */
@@ -70,8 +70,8 @@
 		2CBE11071643606200CBA1A1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2CBE110B1643606200CBA1A1 /* qlmd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "qlmd-Info.plist"; sourceTree = "<group>"; };
 		2CBE110D1643606200CBA1A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		2CBE11131643606200CBA1A1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2CBE11151643606200CBA1A1 /* qlmd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qlmd-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,8 +122,8 @@
 		2CBE11091643606200CBA1A1 /* qlmd */ = {
 			isa = PBXGroup;
 			children = (
-				2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */,
-				2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */,
+				2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.m */,
+				2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.m */,
 				2C7F3DC716444F26005A9C04 /* qlmd.h */,
 				2C7F3DC916444F45005A9C04 /* qlmd.c */,
 				2C3698FB1643A2A000065606 /* houdini_href_e.c */,
@@ -248,8 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.c in Sources */,
-				2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.c in Sources */,
+				2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.m in Sources */,
+				2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.m in Sources */,
 				2CBE11141643606200CBA1A1 /* main.c in Sources */,
 				2C3698ED164385F000065606 /* autolink.c in Sources */,
 				2C3698EF164385F000065606 /* buffer.c in Sources */,
