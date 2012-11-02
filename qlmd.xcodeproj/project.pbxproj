@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3698ED164385F000065606 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698E4164385F000065606 /* autolink.c */; };
+		2C3698EE164385F000065606 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698E5164385F000065606 /* autolink.h */; };
+		2C3698EF164385F000065606 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698E6164385F000065606 /* buffer.c */; };
+		2C3698F0164385F000065606 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698E7164385F000065606 /* buffer.h */; };
+		2C3698F1164385F000065606 /* html_blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698E8164385F000065606 /* html_blocks.h */; };
+		2C3698F2164385F000065606 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698E9164385F000065606 /* markdown.c */; };
+		2C3698F3164385F000065606 /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698EA164385F000065606 /* markdown.h */; };
+		2C3698F4164385F000065606 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698EB164385F000065606 /* stack.c */; };
+		2C3698F5164385F000065606 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698EC164385F000065606 /* stack.h */; };
+		2C3698F91643A23500065606 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698F71643A23500065606 /* html.c */; };
+		2C3698FA1643A23500065606 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698F81643A23500065606 /* html.h */; };
+		2C3698FE1643A2A000065606 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698FB1643A2A000065606 /* houdini_href_e.c */; };
+		2C3698FF1643A2A000065606 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C3698FC1643A2A000065606 /* houdini_html_e.c */; };
+		2C3699001643A2A000065606 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3698FD1643A2A000065606 /* houdini.h */; };
 		2CBE11021643606200CBA1A1 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11011643606200CBA1A1 /* QuickLook.framework */; };
 		2CBE11041643606200CBA1A1 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11031643606200CBA1A1 /* ApplicationServices.framework */; };
 		2CBE11061643606200CBA1A1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBE11051643606200CBA1A1 /* CoreServices.framework */; };
@@ -32,6 +46,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C3698E4164385F000065606 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		2C3698E5164385F000065606 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		2C3698E6164385F000065606 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		2C3698E7164385F000065606 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		2C3698E8164385F000065606 /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html_blocks.h; sourceTree = "<group>"; };
+		2C3698E9164385F000065606 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
+		2C3698EA164385F000065606 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		2C3698EB164385F000065606 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		2C3698EC164385F000065606 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		2C3698F71643A23500065606 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		2C3698F81643A23500065606 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		2C3698FB1643A2A000065606 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		2C3698FC1643A2A000065606 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		2C3698FD1643A2A000065606 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
 		2CBE10FE1643606200CBA1A1 /* qlmd.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlmd.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBE11011643606200CBA1A1 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		2CBE11031643606200CBA1A1 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -93,6 +121,20 @@
 			children = (
 				2CBE110F1643606200CBA1A1 /* GenerateThumbnailForURL.c */,
 				2CBE11111643606200CBA1A1 /* GeneratePreviewForURL.c */,
+				2C3698FB1643A2A000065606 /* houdini_href_e.c */,
+				2C3698FC1643A2A000065606 /* houdini_html_e.c */,
+				2C3698FD1643A2A000065606 /* houdini.h */,
+				2C3698F71643A23500065606 /* html.c */,
+				2C3698F81643A23500065606 /* html.h */,
+				2C3698E4164385F000065606 /* autolink.c */,
+				2C3698E5164385F000065606 /* autolink.h */,
+				2C3698E6164385F000065606 /* buffer.c */,
+				2C3698E7164385F000065606 /* buffer.h */,
+				2C3698E8164385F000065606 /* html_blocks.h */,
+				2C3698E9164385F000065606 /* markdown.c */,
+				2C3698EA164385F000065606 /* markdown.h */,
+				2C3698EB164385F000065606 /* stack.c */,
+				2C3698EC164385F000065606 /* stack.h */,
 				2CBE11131643606200CBA1A1 /* main.c */,
 				2CBE110A1643606200CBA1A1 /* Supporting Files */,
 			);
@@ -116,6 +158,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3698EE164385F000065606 /* autolink.h in Headers */,
+				2C3698F0164385F000065606 /* buffer.h in Headers */,
+				2C3698F1164385F000065606 /* html_blocks.h in Headers */,
+				2C3698F3164385F000065606 /* markdown.h in Headers */,
+				2C3698F5164385F000065606 /* stack.h in Headers */,
+				2C3698FA1643A23500065606 /* html.h in Headers */,
+				2C3699001643A2A000065606 /* houdini.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +246,13 @@
 				2CBE11101643606200CBA1A1 /* GenerateThumbnailForURL.c in Sources */,
 				2CBE11121643606200CBA1A1 /* GeneratePreviewForURL.c in Sources */,
 				2CBE11141643606200CBA1A1 /* main.c in Sources */,
+				2C3698ED164385F000065606 /* autolink.c in Sources */,
+				2C3698EF164385F000065606 /* buffer.c in Sources */,
+				2C3698F2164385F000065606 /* markdown.c in Sources */,
+				2C3698F4164385F000065606 /* stack.c in Sources */,
+				2C3698F91643A23500065606 /* html.c in Sources */,
+				2C3698FE1643A2A000065606 /* houdini_href_e.c in Sources */,
+				2C3698FF1643A2A000065606 /* houdini_html_e.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +368,7 @@
 				2CBE111A1643606200CBA1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
